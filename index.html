@@ -27,9 +27,56 @@
 
                         <table class="train-schedule">
                             <tr>
-                                <th class ="col-xs-3"></th>
+                                <th class ="col-xs-3">Train name</th>
+
+                                <th class ="col-xs-2">Destination</th>
+
+                                <th class ="col-xs-2">Frequency (min)</th>
+
+                                <th class ="col-xs-2">Next Arrival</th>
+
+                                <th class ="col-xs-2">Minutes Away</th>
                             </tr>
                         </table>
+
+                    </div> <!-- closes panel-body-->
+                </div> <!-- closes panel-default-->
+            </div> <!--closes col-lg-6-->
+        </div> <!-- closes row-->
+    </div> <!-- closes container-->
+
+    <div class="container input-container">
+        <div class="row">
+
+            <!-- sign-up panel-->
+            <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                <div class ="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Add Train</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <!-- sign-up form (note the various input "types")-->
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="text">Train Name</label>
+                                <input type="text" class="form-control" id="name-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="text">Destination</label>
+                                <input type="text" class="form-control" id="destination-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="text">First Train Time (HH:mm - military time)</label>
+                                <input type="text" class="form-control" id="first-train-time-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Frequency (min)</label>
+                                <input type="text" class="form-control" id="frequency-input">
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="add-train">submit</button>
+
+                        </form>
                     </div>
                 </div>
             </div>
